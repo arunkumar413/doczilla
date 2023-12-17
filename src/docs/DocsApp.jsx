@@ -1,9 +1,9 @@
 import React from "react";
-import { DocsLayout } from "./docs/DocsLayout.jsx";
+import { DocsLayout } from "./DocsLayout.jsx";
 
 
 
-export function App(){
+export function DocsApp(){
 
 
     return(

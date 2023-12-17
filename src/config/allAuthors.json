@@ -1,0 +1,24 @@
+{
+  "authors": [
+    {
+      "name": "Arun",
+      "email": "arunkumar413@gmail.com",
+      "links": [
+        {
+          "github": "http://github/com",
+          "twitter": "http://twitter.com"
+        }
+      ]
+    },
+    {
+      "name": "Tom",
+      "email": "tom@cartoon.com",
+      "links": [
+        {
+          "github": "http://github/com",
+          "twitter": "http://twitter.com"
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,6 @@
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const path = require('path')
-
+const path = require("path");
 
 const port = process.env.PORT || 3000;
 
@@ -10,8 +9,9 @@ module.exports = {
   mode: "development",
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, "dist"),
     filename: "bundle.[hash].js",
+    publicPath:"/"
   },
   devtool: "inline-source-map",
   module: {
@@ -41,18 +41,22 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.md$/,
+        use: "raw-loader",
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'public/index.html',
-      favicon: 'public/favicon.ico'
-    })
+      template: "public/index.html",
+      favicon: "public/favicon.ico",
+    }),
   ],
   devServer: {
-    host: 'localhost',
+    host: "localhost",
     port: port,
     historyApiFallback: true,
-    open: true
-  }
+    open: true,
+  },
 };
