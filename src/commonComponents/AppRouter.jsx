@@ -12,7 +12,7 @@ import { BlogApp } from "../blog/posts/BlogApp.jsx";
 export const AppRouter = createBrowserRouter([
   {
     path:'/',
-    element:<Link to="/docs/v1/test-doc"> Test</Link>
+    element:<Link to="/docs/v1/test"> Test</Link>
   },
   {
     path: "/docs/v1/:docName",
