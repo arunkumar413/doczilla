@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "title": "First post",
+      "slug": "first-post",
+      "postDate": "2023-12-17",
+      "tags": ["sample", "test"],
+      "description": "Ths is  sample first blog post",
+      "authors": ["Arun", "Tom"]
+    },
+    {
+      "title": "Second post",
+      "slug": "second-post",
+      "postDate": "2023-12-17",
+      "tags": ["sample", "test"],
+      "description": "Ths is  sample second blog post",
+      "authors": ["Arun", "Tom"]
+    },
+    {
+      "title": "Third post",
+      "slug": "third-post",
+      "postDate": "2023-12-17",
+      "tags": ["sample", "test"],
+      "description": "Ths is  sample third blog post",
+      "authors": ["Arun", "Tom"]
+    }
+  ]
+}

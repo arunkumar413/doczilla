@@ -9,7 +9,6 @@ export function DocsApp(){
     return(
         <div className="App">
             <DocsLayout/>
-
         </div>
     )
 }

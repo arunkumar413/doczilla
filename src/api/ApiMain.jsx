@@ -1,26 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { useMatch } from "react-router-dom";
-import v1DocsConfig from "../config/v1DocsConfig.json";
-import test1 from "./v1/test.md";
-import {
-  fetchAndConvertMarkdown,
-  loadMarkdownFile,
-  parseMarkdown,
-} from "../utils";
+// import v1ApiDocs from '../config/v1apiConfig.json'
+
 import { Parser } from "html-to-react";
 import markdownit from "markdown-it";
 
-export function DocsMain() {
-  const docName = useMatch("/docs/v1/:docName").params.docName;
+export function ApiMain() {
+  const docName = useMatch("/api/v1/:docName").params.docName;
   const [selectedMarkDown, setMarkDown] = useState("");
-
-  const elements = v1DocsConfig.docs.map(function (item, index) {
-    return (
-      <div>
-        <h3> {item.title}</h3>
-      </div>
-    );
-  });
 
   useEffect(
     function () {
@@ -32,7 +19,7 @@ export function DocsMain() {
               setMarkDown(markdownContent);
             });
         } catch (err) {
-          console.log(err)
+          console.log(err);
         }
       }
       getDoc();
@@ -45,8 +32,8 @@ export function DocsMain() {
   const jsxElements = jsxParser.parse(result);
 
   return (
-    <main className="DocsMain">
-      <h3> Docs main</h3>
+    <main className="ApiMain">
+      <h3> API main</h3>
       {jsxElements}
     </main>
   );

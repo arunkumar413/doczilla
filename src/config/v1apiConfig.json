@@ -1,0 +1,29 @@
+{
+    "apiDocs": [
+      {
+        "title": "First post",
+        "slug": "first-api",
+        "postDate": "2023-12-17",
+        "tags": ["sample", "test"],
+        "description": "Ths is  sample first api doc",
+        "authors": ["Arun", "Tom"]
+      },
+      {
+        "title": "Second post",
+        "slug": "second-api",
+        "postDate": "2023-12-17",
+        "tags": ["sample", "test"],
+        "description": "Ths is  sample second api doc",
+        "authors": ["Arun", "Tom"]
+      },
+      {
+        "title": "Third post",
+        "slug": "third-api",
+        "postDate": "2023-12-17",
+        "tags": ["sample", "test"],
+        "description": "Ths is  sample third api doc",
+        "authors": ["Arun", "Tom"]
+      }
+    ]
+  }
+  

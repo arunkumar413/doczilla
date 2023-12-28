@@ -1,28 +1,37 @@
-
-import * as React from "react"; 
+import * as React from "react";
 import * as ReactDOM from "react-dom/client";
+import { Navigate } from "react-router-dom";
+
 import {
   createBrowserRouter,
   Link,
+  redirect,
   RouterProvider,
 } from "react-router-dom";
 import { DocsApp } from "../docs/DocsApp.jsx";
-import { BlogApp } from "../blog/posts/BlogApp.jsx";
+import { BlogApp } from "../blog/BlogApp.jsx";
+import { BlogHome } from "../blog/BlogHome.jsx";
+import { ApiApp } from "../api/ApiApp.jsx";
 
 export const AppRouter = createBrowserRouter([
   {
-    path:'/',
-    element:<Link to="/docs/v1/test"> Test</Link>
+    path: "/",
+    element: <Link to="/docs/v1/test"> Test</Link>,
   },
   {
     path: "/docs/v1/:docName",
-    element: <DocsApp/>,
-
+    element: <DocsApp />,
   },
   {
-    path:'/blog/:blog-name',
-    element:<BlogApp/>,
-
-
-  }
+    path: "/blog",
+    element: <BlogHome />,
+  },
+  {
+    path: "/api/v1/:docName",
+    element: <ApiApp />,
+  },
+  {
+    path: "/blog/:blogName",
+    element: <BlogApp />,
+  },
 ]);
