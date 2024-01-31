@@ -12,11 +12,13 @@ import { DocsApp } from "../docs/DocsApp.jsx";
 import { BlogApp } from "../blog/BlogApp.jsx";
 import { BlogHome } from "../blog/BlogHome.jsx";
 import { ApiApp } from "../api/ApiApp.jsx";
+import { Home } from "./Home.jsx";
 
 export const AppRouter = createBrowserRouter([
   {
     path: "/",
-    element: <Link to="/docs/v1/test"> Test</Link>,
+    // element: <Link to="/docs/v1/test"> Test</Link>,
+    element:<Home/>
   },
   {
     path: "/docs/v1/:docName",

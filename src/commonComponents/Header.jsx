@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import docsV1config from "../config/v1DocsConfig.json";
-import v1ApiDocs from '../config/v1apiConfig.json'
+import v1ApiDocs from "../config/v1apiConfig.json";
 import blogPostsConfig from "../config/blogPosts.json";
 
 export function Header() {
@@ -16,6 +16,7 @@ export function Header() {
     <header className="Header">
       <h5> Welcome to Doczilla</h5>
       <div className="header-links">
+        <Link to={"/"}> Home</Link>
         <Link to={`/docs/v1/${docsV1config.docs[0].slug}`}> Docs</Link>
         <Link to={`/api/v1/${v1ApiDocs.apiDocs[0].slug}`}> API</Link>
         <Link to={`/blog/${blogPostsConfig.posts[0].slug}`}> Blog</Link>

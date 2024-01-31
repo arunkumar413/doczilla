@@ -32,21 +32,21 @@ export function DocsMain() {
               setMarkDown(markdownContent);
             });
         } catch (err) {
-          console.log(err)
+          console.log(err);
         }
       }
       getDoc();
     },
     [docName]
   );
-  const md = markdownit()
+  const md = markdownit();
   const result = md.render(selectedMarkDown);
   const jsxParser = new Parser();
   const jsxElements = jsxParser.parse(result);
 
   return (
     <main className="DocsMain">
-      <h3> Docs main</h3>
+      {/* <h3> Docs main</h3> */}
       {jsxElements}
     </main>
   );

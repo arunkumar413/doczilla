@@ -1,28 +1,28 @@
 {
-    "docs":[{
-        "title":"Fist document",
-        "slug":"test",
-        "description":"This is a first document",
-        "date":"2023-12-17",
-        "authors":["Arun","Tom"],
-        "fileName":"test.md"
+  "docs": [
+    {
+      "title": "Introduction",
+      "slug": "test",
+      "description": "This is a first document",
+      "date": "2023-12-17",
+      "authors": ["Arun", "Tom"],
+      "fileName": "test.md"
     },
     {
-        "title":"Secod document",
-        "slug":"second-doc",
-        "description":"This is a second document",
-        "date":"2023-12-17",
-        "authors":["Arun","Tom"],
-        "fileName":"secondPost.md"
+      "title": "Secod document",
+      "slug": "second-doc",
+      "description": "This is a second document",
+      "date": "2023-12-17",
+      "authors": ["Arun", "Tom"],
+      "fileName": "secondPost.md"
     },
     {
-        "title":"Third document",
-        "slug":"third-doc",
-        "description":"This is a third document",
-        "date":"2023-12-17",
-        "authors":["Arun","Tom"],
-        "fileName":"secondPost.md"
+      "title": "Third document",
+      "slug": "third-doc",
+      "description": "This is a third document",
+      "date": "2023-12-17",
+      "authors": ["Arun", "Tom"],
+      "fileName": "secondPost.md"
     }
-
-]
+  ]
 }
