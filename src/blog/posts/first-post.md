@@ -1,5 +1,6 @@
 ## First blog post
 
+```
 .
 ├── package.json
 ├── package-lock.json
@@ -57,3 +58,6 @@
 │ ├── index.js
 │ └── utils.js
 └── webpack.config.js
+
+
+```
