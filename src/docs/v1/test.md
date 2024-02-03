@@ -12,7 +12,7 @@ All the documentation,blog and API docs are written in markdown syntax and react
 
 `src/docs/v2` Directory for `v2` related documents.
 
-Simimlary you can create another directory `v3` under `src/docs/` to manage the documents for version 3.
+Similarly you can create another directory `v3` under `src/docs/` to manage the documents for version 3.
 
 The `src/docs` structure is shown below.
 
@@ -53,7 +53,7 @@ Below is the configuration for the docs posts. `slug` property should match the 
       "description": "This is a second document",
       "date": "2023-12-17",
       "authors": ["Arun", "Tom"],
-      "fileName": "secondPost.md"
+      "fileName": "second-doc.md"
     },
     {
       "title": "Third document",
@@ -61,7 +61,7 @@ Below is the configuration for the docs posts. `slug` property should match the 
       "description": "This is a third document",
       "date": "2023-12-17",
       "authors": ["Arun", "Tom"],
-      "fileName": "secondPost.md"
+      "fileName": "third-doc.md"
     }
   ]
 }
@@ -87,6 +87,6 @@ Below is the configuration for the docs posts. `slug` property should match the 
   "description": "This is a second document",
   "date": "2023-12-17",
   "authors": ["Arun", "Tom"],
-  "fileName": "secondPost.md"
+  "fileName": "simple-doc-test.md"
 }
 ```
